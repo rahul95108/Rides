@@ -20,6 +20,7 @@ struct ContentView: View {
                 
                 // Submit button to fetch vehicles
                 Button(action: {
+                    viewModel.vehicles = []
                     if viewModel.vehicleNumber.isEmpty {
                         viewModel.showAlert = true
                         viewModel.errorMessage = "Enter Number of Vehicles"
